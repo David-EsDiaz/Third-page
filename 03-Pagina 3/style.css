@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  min-height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.car{
+  display: flex;
+  max-width: 800px;
+}
+.car__sedans{
+  background-color: #e28525;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 35px;
+}
+.car__suvs{
+  background-color: #016972;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 35px;
+}
+.car__luxury{
+  background-color: #00403f;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 35px;
+}
+.car__img{
+  width: 50px;
+}
+.car__title{
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.car__info{
+  font-size: 1.5rem;
+  margin-bottom: 80px;
+}
+.car__button{
+  border-radius: 30px;
+	cursor:pointer;
+  font-weight:bold;
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  align-self: flex-start;
+}
+.car__button--sedadns{
+  color:#e28525;
+}
+.car__button--suvs{
+  color:#016972;
+}
+.car__button--luxury{
+  color:#00403f;
+}
+
+@media(max-width:768px){
+  body{
+    padding: 20px;
+  }
+  .car{
+    flex-direction: column;
+    width: 80%;    
+  }
+  .car__info{
+    margin-bottom: 40px;
+  }
+  .car__title{
+    font-size: 3.8rem;
+  }
+  .car__info{
+    font-size: 1.3rem;
+    max-width: 70%;
+  }
+}
+@media(max-width:550px){
+  body{
+    padding: 10px;
+  }
+  .car{
+    flex-direction: column;
+    width: 100%;
+  }
+  .car__title{
+    font-size: 3.6rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .car__info{
+    margin-bottom: 20px;
+    max-width: 100%;
+    font-size: 1.1rem;
+  }
+
+}
